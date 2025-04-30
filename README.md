@@ -2,10 +2,6 @@
 
 This project provides a simplified way to set up a Hadoop environment using Docker for educational purposes. The setup includes HDFS and YARN, allowing you to run MapReduce jobs in a controlled environment.
 
-## Quick Start
-
-For simplified instructions, see [QUICK_START.md](QUICK_START.md).
-
 ## What's Included
 
 - `Dockerfile`: Defines the Hadoop environment
