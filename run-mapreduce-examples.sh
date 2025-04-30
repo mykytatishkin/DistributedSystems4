@@ -62,10 +62,9 @@ echo "hdfs dfs -rm -r /user/root/wordcount/output"
 
 echo "########## MapReduce Examples Complete ##########"
 echo ""
-echo "Don't forget to take screenshots of:"
+echo "Examples of MapReduce Job Execution:"
 echo "1. The NameNode web UI (http://localhost:9870)"
 echo "2. The ResourceManager web UI (http://localhost:8088)"
 echo "3. The terminal showing MapReduce job execution"
 echo "4. The output results"
 echo ""
-echo "These screenshots should be included in your report."> 
