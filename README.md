@@ -30,34 +30,6 @@ This project provides a simplified way to set up a Hadoop environment using Dock
    docker exec -it hadoop-node bash -c "jps"
    ```
 
-## Cleaning Up
-
-The `cleanup.sh` script helps you manage resources used by this project. It can:
-
-- Stop and remove the Hadoop container
-- Remove the Docker image
-- Delete temporary files created during testing
-- Optionally remove screenshots
-
-### Using the Cleanup Script
-
-1. Make the script executable:
-   ```bash
-   chmod +x cleanup.sh
-   ```
-
-2. Run the script:
-   ```bash
-   ./cleanup.sh
-   ```
-
-3. Use the menu to select what you want to clean up:
-   - Option 1: Stop the Hadoop container
-   - Option 2: Remove the Hadoop container
-   - Option 3: Remove the Hadoop Docker image
-   - Option 4: Remove temporary files (with optional screenshot removal)
-   - Option 5: Full cleanup (all of the above)
-   - Option 0: Exit without doing anything
 
 ## Web Interfaces
 
@@ -79,39 +51,6 @@ Follow the instructions in `REPORT_TEMPLATE.md` and `gather-screenshots.md` to c
 - `REPORT_TEMPLATE.md`: Template for the final report
 - `gather-screenshots.md`: Guide for taking screenshots for the report
 - `README.md`: This file
-
-## Prerequisites
-
-- Docker installed on your system
-- At least 4GB of RAM available for Docker
-- Internet connection to download Hadoop
-
-## Detailed Instructions
-
-For detailed steps, follow these guides:
-
-1. Review the commented Dockerfile and installation script to understand the setup process
-2. Use the `gather-screenshots.md` guide to document your progress
-3. Complete each example in the `run-mapreduce-examples.sh` script
-4. Use the `REPORT_TEMPLATE.md` to create your final report
-
-## Troubleshooting
-
-- If the container fails to start, check Docker logs:
-  ```
-  docker logs hadoop-node
-  ```
-
-- If Hadoop services aren't running, connect to the container and check:
-  ```
-  docker exec -it hadoop-node bash
-  jps
-  ```
-
-- If Web UIs are not accessible, ensure ports are correctly mapped:
-  ```
-  docker port hadoop-node
-  ```
 
 ## References
 
